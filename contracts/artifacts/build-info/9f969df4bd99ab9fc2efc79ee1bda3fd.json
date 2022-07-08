@@ -1,0 +1,527 @@
+{
+	"id": "9f969df4bd99ab9fc2efc79ee1bda3fd",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/ExoSupermarche.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.7;\r\n\r\ncontract supermarche {\r\n\r\n    struct produit {\r\n        uint _id;\r\n        string _libelle;\r\n        int16 _prix;\r\n    }\r\n\r\n    struct client {\r\n        uint _id;\r\n        string _nom;\r\n        supermarche.produit[] _panier;\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/ExoSupermarche.sol": {
+				"supermarche": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/ExoSupermarche.sol\":59:307  contract supermarche {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/ExoSupermarche.sol\":59:307  contract supermarche {\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa264697066735822122080fd6d13021c8ee69cb9005458b911ecd5218b86aefb997eb69b5cd688c89af364736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122080fd6d13021c8ee69cb9005458b911ecd5218b86aefb997eb69b5cd688c89af364736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP1 REVERT PUSH14 0x13021C8EE69CB9005458B911ECD5 0x21 DUP12 DUP7 0xAE 0xFB SWAP10 PUSH31 0xB69B5CD688C89AF364736F6C63430008070033000000000000000000000000 ",
+							"sourceMap": "59:248:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea264697066735822122080fd6d13021c8ee69cb9005458b911ecd5218b86aefb997eb69b5cd688c89af364736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP1 REVERT PUSH14 0x13021C8EE69CB9005458B911ECD5 0x21 DUP12 DUP7 0xAE 0xFB SWAP10 PUSH31 0xB69B5CD688C89AF364736F6C63430008070033000000000000000000000000 ",
+							"sourceMap": "59:248:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 59,
+									"end": 307,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a264697066735822122080fd6d13021c8ee69cb9005458b911ecd5218b86aefb997eb69b5cd688c89af364736f6c63430008070033",
+									".code": [
+										{
+											"begin": 59,
+											"end": 307,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 59,
+											"end": 307,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 59,
+											"end": 307,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 59,
+											"end": 307,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 59,
+											"end": 307,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 59,
+											"end": 307,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/ExoSupermarche.sol\":\"supermarche\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/ExoSupermarche.sol\":{\"keccak256\":\"0x11ab68b92ce39e1d1622b179ae6f5afd6d00d300e5bfde7f765b4ddc8ccea604\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9b190c4bb97e620d50e36132ead700a39725d9b157e91c9d0f08f71956abe201\",\"dweb:/ipfs/QmVHn9xeTaE2ac6WgShzKoZqjhVRWwi8qYXHSZgfFvEcSX\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/ExoSupermarche.sol": {
+				"ast": {
+					"absolutePath": "contracts/ExoSupermarche.sol",
+					"exportedSymbols": {
+						"supermarche": [
+							18
+						]
+					},
+					"id": 19,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:22:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 18,
+							"linearizedBaseContracts": [
+								18
+							],
+							"name": "supermarche",
+							"nameLocation": "68:11:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "supermarche.produit",
+									"id": 8,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"mutability": "mutable",
+											"name": "_id",
+											"nameLocation": "120:3:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 8,
+											"src": "115:8:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "115:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"mutability": "mutable",
+											"name": "_libelle",
+											"nameLocation": "141:8:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 8,
+											"src": "134:15:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "134:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 7,
+											"mutability": "mutable",
+											"name": "_prix",
+											"nameLocation": "166:5:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 8,
+											"src": "160:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_int16",
+												"typeString": "int16"
+											},
+											"typeName": {
+												"id": 6,
+												"name": "int16",
+												"nodeType": "ElementaryTypeName",
+												"src": "160:5:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_int16",
+													"typeString": "int16"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "produit",
+									"nameLocation": "96:7:0",
+									"nodeType": "StructDefinition",
+									"scope": 18,
+									"src": "89:90:0",
+									"visibility": "public"
+								},
+								{
+									"canonicalName": "supermarche.client",
+									"id": 17,
+									"members": [
+										{
+											"constant": false,
+											"id": 10,
+											"mutability": "mutable",
+											"name": "_id",
+											"nameLocation": "217:3:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 17,
+											"src": "212:8:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 9,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "212:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 12,
+											"mutability": "mutable",
+											"name": "_nom",
+											"nameLocation": "238:4:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 17,
+											"src": "231:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 11,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "231:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 16,
+											"mutability": "mutable",
+											"name": "_panier",
+											"nameLocation": "275:7:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 17,
+											"src": "253:29:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_array$_t_struct$_produit_$8_storage_$dyn_storage_ptr",
+												"typeString": "struct supermarche.produit[]"
+											},
+											"typeName": {
+												"baseType": {
+													"id": 14,
+													"nodeType": "UserDefinedTypeName",
+													"pathNode": {
+														"id": 13,
+														"name": "supermarche.produit",
+														"nodeType": "IdentifierPath",
+														"referencedDeclaration": 8,
+														"src": "253:19:0"
+													},
+													"referencedDeclaration": 8,
+													"src": "253:19:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_struct$_produit_$8_storage_ptr",
+														"typeString": "struct supermarche.produit"
+													}
+												},
+												"id": 15,
+												"nodeType": "ArrayTypeName",
+												"src": "253:21:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_array$_t_struct$_produit_$8_storage_$dyn_storage_ptr",
+													"typeString": "struct supermarche.produit[]"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "client",
+									"nameLocation": "194:6:0",
+									"nodeType": "StructDefinition",
+									"scope": 18,
+									"src": "187:103:0",
+									"visibility": "public"
+								}
+							],
+							"scope": 19,
+							"src": "59:248:0",
+							"usedErrors": []
+						}
+					],
+					"src": "33:274:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

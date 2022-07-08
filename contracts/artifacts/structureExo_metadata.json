@@ -1,0 +1,120 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_eleveAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_note",
+						"type": "uint256"
+					}
+				],
+				"name": "addNote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_eleveAddress",
+						"type": "address"
+					}
+				],
+				"name": "getNom",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_eleveAddress",
+						"type": "address"
+					}
+				],
+				"name": "getNotesPerEleve",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_eleveAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_nom",
+						"type": "string"
+					}
+				],
+				"name": "setNom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/struct.sol": "structureExo"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/struct.sol": {
+			"keccak256": "0x81e7c0ebcf145fdefbd8ff79e2bada537f6d7b58cc5671c945e908dc4e9d72eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7f23da7505429bf5a30fef41b3c9e46e899056976f7a1326fe04de3b5c000424",
+				"dweb:/ipfs/Qmc69fYU7JSzXUXAFDR2Rq76U5vtMjfUqPe8vCHeU7as92"
+			]
+		}
+	},
+	"version": 1
+}
